@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111416" />
+    <meta name="description" content="Demo visual para taller automotriz: servicios, recogida y atención coordinada por WhatsApp." />
+    <title>Taller Demo · Tu vehículo, en buenas manos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="demo-ribbon"><span>DEMO VISUAL</span><i></i> Datos, fotografías y ubicación por configurar</div>
+
+    <header class="site-header" id="top">
+      <nav class="nav shell" aria-label="Navegación principal">
+        <a class="brand" href="#top" aria-label="Inicio Taller Demo">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none"><path d="M5.5 7.5h17v13h-17z" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 7.5V5.7c0-1  .8-1.7 1.7-1.7h7.6c1 0 1.7.8 1.7 1.7v1.8M8 16.2h12M10 20.5h.01M18 20.5h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="m11 12 2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><b data-config="name">Taller Demo</b><small>servicio automotriz</small></span>
+        </a>
+        <div class="nav-links" id="nav-links">
+          <a href="#servicios">Servicios</a>
+          <a href="#recogida">Recogida</a>
+          <a href="#galeria">Galería</a>
+          <a href="#ubicacion">Ubicación</a>
+        </div>
+        <a class="button button-small button-accent nav-cta js-whatsapp" href="#" data-message="Hola, quisiera solicitar información sobre el servicio automotriz."><span>WhatsApp</span><svg viewBox="0 0 16 16" fill="none"><path d="M13.4 7.7a5.7 5.7 0 0 1-8.4 5L2.2 13.8l1-2.7a5.7 5.7 0 1 1 10.2-3.4Z" stroke="currentColor" stroke-width="1.3"/><path d="M5.8 5.4c.2-.2.4-.2.6 0l.6.9c.1.2.1.4-.1.6l-.3.3c.4.7 1 1.2 1.7 1.6l.4-.4c.1-.1.4-.2.6 0l.9.5c.2.1.2.4.1.6-.3.5-.8.8-1.3.8-1.8-.2-4-2.3-4.3-4.1 0-.3.2-.6.5-.8Z" fill="currentColor"/></svg></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú"><span></span><span></span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" role="img" aria-label="Taller automotriz moderno con un vehículo en servicio"></div>
+        <div class="hero-shade"></div>
+        <div class="shell hero-content">
+          <div class="eyebrow light"><span class="eyebrow-dot"></span> Servicio automotriz coordinado</div>
+          <h1 id="hero-title">Tu vehículo,<br /><em>en buenas manos.</em></h1>
+          <p class="hero-copy">Servicio automotriz, diagnóstico y atención coordinada desde un solo lugar.</p>
+          <div class="hero-actions">
+            <a class="button button-accent js-whatsapp" href="#" data-message="Hola, quisiera solicitar información sobre el servicio automotriz.">Solicitar atención <span>por WhatsApp</span><svg viewBox="0 0 18 18" fill="none"><path d="M3 9h11M10 4.5 14.5 9 10 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="text-link light-link" href="#servicios">Ver servicios <span>↘</span></a>
+          </div>
+          <div class="hero-note"><span class="note-icon">✦</span><span>Una experiencia clara desde el primer contacto.</span></div>
+        </div>
+        <div class="hero-bottom shell">
+          <div class="hero-stat"><strong>01</strong><span>Diagnóstico<br />con claridad</span></div>
+          <div class="hero-stat"><strong>02</strong><span>Coordinación<br />por WhatsApp</span></div>
+          <div class="hero-stat"><strong>03</strong><span>Seguimiento<br />de principio a fin</span></div>
+          <div class="scroll-cue"><span></span> Desliza para explorar</div>
+        </div>
+      </section>
+
+      <section class="section services-section" id="servicios" aria-labelledby="services-title">
+        <div class="shell">
+          <div class="section-heading split-heading reveal">
+            <div><div class="eyebrow"><span class="eyebrow-dot"></span> Lo que podemos mostrar</div><h2 id="services-title">Soluciones para seguir <em>en movimiento.</em></h2></div>
+            <p>Una selección de servicios demostrativos, lista para adaptarse a lo que realmente ofrece tu taller.</p>
+          </div>
+          <div class="services-grid" id="services-grid"></div>
+          <div class="section-foot reveal"><span>Todos los servicios son editables en la configuración.</span><a class="text-link" href="#formulario">Cuéntanos qué necesitas <span>↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="pickup-section" id="recogida" aria-labelledby="pickup-title">
+        <div class="shell pickup-layout">
+          <div class="pickup-intro reveal"><div class="eyebrow light"><span class="eyebrow-dot"></span> Función demostrativa</div><h2 id="pickup-title">Tu tiempo importa.<br /><em>Nos coordinamos contigo.</em></h2><p>Imagina una experiencia más simple: solicita la recogida, comparte los datos básicos y recibe seguimiento por el canal que ya utilizas.</p><a class="button button-accent" href="#" data-message="Hola, quisiera solicitar información sobre la recogida de mi vehículo." data-whatsapp>Solicitar recogida <svg viewBox="0 0 18 18" fill="none"><path d="M3 9h11M10 4.5 14.5 9 10 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+          <div class="flow-card reveal"><div class="flow-card-head"><span>Flujo sugerido</span><span class="mono">06 pasos</span></div><ol class="flow-list"><li><span class="flow-number">01</span><div><strong>Solicita recogida</strong><small>Un mensaje es suficiente para comenzar.</small></div></li><li><span class="flow-number">02</span><div><strong>Comparte tu ubicación</strong><small>Y los datos básicos del vehículo.</small></div></li><li><span class="flow-number">03</span><div><strong>Coordinamos por WhatsApp</strong><small>Definimos día y ventana de atención.</small></div></li><li><span class="flow-number">04</span><div><strong>Recogemos el vehículo</strong><small>La logística queda centralizada.</small></div></li><li><span class="flow-number">05</span><div><strong>Realizamos el servicio</strong><small>Con actualización del avance.</small></div></li><li><span class="flow-number">06</span><div><strong>Coordinamos la entrega</strong><small>Tu vehículo vuelve a ti.</small></div></li></ol></div>
+        </div>
+      </section>
+
+      <section class="section form-section" id="formulario" aria-labelledby="form-title">
+        <div class="shell form-layout">
+          <div class="form-copy reveal"><div class="eyebrow"><span class="eyebrow-dot"></span> Atención a tu medida</div><h2 id="form-title">Cuéntanos qué<br /><em>necesita tu vehículo.</em></h2><p>Este formulario es una muestra de cómo podría iniciar una solicitud. No guarda información: al enviarlo, prepara un mensaje para WhatsApp.</p><div class="form-side-note"><span class="note-icon">↗</span><span>Claro para el cliente.<br />Práctico para el taller.</span></div></div>
+          <form class="demo-form reveal" id="demo-form" novalidate><div class="form-topline"><span>Solicitud de servicio</span><span class="mono">DEMO / 001</span></div><div class="field-grid"><label>Nombre<input name="name" type="text" placeholder="Tu nombre" required /></label><label>Teléfono<input name="phone" type="tel" placeholder="Tu teléfono" required /></label><label>Ubicación<input name="location" type="text" placeholder="Zona o sector" /></label><label>Marca / modelo<input name="vehicle" type="text" placeholder="Ej. Sedán / SUV" /></label></div><label>Servicio requerido<select name="service" required><option value="" selected disabled>Selecciona una opción</option><option>Diagnóstico general</option><option>Servicio preventivo</option><option>Frenos</option><option>Suspensión</option><option>Otro servicio</option></select></label><label>Observaciones<textarea name="notes" rows="3" placeholder="Cuéntanos brevemente qué sucede..."></textarea></label><button class="button button-dark form-submit" type="submit">Preparar solicitud <svg viewBox="0 0 18 18" fill="none"><path d="M3 9h11M10 4.5 14.5 9 10 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><p class="form-status" id="form-status" role="status" aria-live="polite"></p></form>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="galeria" aria-labelledby="gallery-title">
+        <div class="shell"><div class="section-heading split-heading reveal"><div><div class="eyebrow"><span class="eyebrow-dot"></span> Referencias visuales</div><h2 id="gallery-title">Así podría verse<br /><em>el día a día.</em></h2></div><p>Imágenes genéricas para explorar el tono visual de la propuesta. Se reemplazan fácilmente por fotografías reales del taller.</p></div><div class="gallery-grid"><figure class="gallery-item gallery-large reveal"><img src="https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=1400&q=82" alt="Herramientas y espacio de un taller automotriz" loading="lazy" decoding="async" /><figcaption><span>Taller</span><small>Imagen de referencia</small></figcaption></figure><figure class="gallery-item gallery-tall reveal"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=82" alt="Vehículo oscuro en exterior" loading="lazy" decoding="async" /><figcaption><span>Vehículos</span><small>Imagen de referencia</small></figcaption></figure><figure class="gallery-item gallery-wide reveal"><img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1100&q=82" alt="Detalle de vehículo en servicio" loading="lazy" decoding="async" /><figcaption><span>Trabajos</span><small>Imagen de referencia</small></figcaption></figure><figure class="gallery-item gallery-small reveal"><img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=800&q=82" alt="Herramientas mecánicas sobre una mesa de trabajo" loading="lazy" decoding="async" /><figcaption><span>Herramientas</span><small>Imagen de referencia</small></figcaption></figure></div></div>
+      </section>
+
+      <section class="section location-section" id="ubicacion" aria-labelledby="location-title">
+        <div class="shell location-layout"><div class="location-copy reveal"><div class="eyebrow"><span class="eyebrow-dot"></span> Encuéntranos</div><h2 id="location-title">Cerca de ti.<br /><em>Listos para ayudarte.</em></h2><p>Esta ubicación es un placeholder visual para la demo y puede reemplazarse cuando el prospecto comparta sus datos definitivos.</p><div class="location-detail"><span class="detail-icon">⌖</span><div><small>Ubicación</small><strong data-config="location">Nueva ubicación</strong><span data-config="reference">Referencia: Bodega 14</span></div></div><a class="button button-dark" href="#" data-maps-link>Cómo llegar <svg viewBox="0 0 18 18" fill="none"><path d="M3 9h11M10 4.5 14.5 9 10 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div><div class="map-demo reveal" aria-label="Mapa demostrativo"><div class="map-grid"></div><div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-road road-three"></div><div class="map-label label-a">Av. Principal</div><div class="map-label label-b">Zona de atención</div><div class="map-pin"><span>✦</span></div><div class="map-badge"><span class="status-dot"></span> Ubicación por configurar</div></div></div>
+      </section>
+
+      <section class="hours-section" aria-labelledby="hours-title"><div class="shell hours-layout"><div><div class="eyebrow light"><span class="eyebrow-dot"></span> Horarios demo</div><h2 id="hours-title">Cuando lo<br /><em>necesites.</em></h2></div><div class="hours-card" id="hours-list"></div><div class="hours-note"><span class="note-icon">◷</span><span>Horarios editables<br />según operación real.</span></div></div></section>
+
+      <section class="final-cta" aria-labelledby="final-title"><div class="shell final-cta-inner reveal"><div><div class="eyebrow light"><span class="eyebrow-dot"></span> Primer paso</div><h2 id="final-title">¿Tu vehículo<br /><em>necesita atención?</em></h2></div><div class="final-actions"><a class="button button-accent js-whatsapp" href="#" data-message="Hola, quisiera solicitar información sobre el servicio automotriz.">Escribir por WhatsApp <svg viewBox="0 0 18 18" fill="none"><path d="M3 9h11M10 4.5 14.5 9 10 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="button button-outline-light" href="#" data-message="Hola, quisiera solicitar información sobre la recogida de mi vehículo." data-whatsapp>Solicitar recogida</a></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="shell footer-grid"><div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 28 28" fill="none"><path d="M5.5 7.5h17v13h-17z" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 7.5V5.7c0-1 .8-1.7 1.7-1.7h7.6c1 0 1.7.8 1.7 1.7v1.8M8 16.2h12M10 20.5h.01M18 20.5h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span><b data-config="name">Taller Demo</b><small>servicio automotriz</small></span></a><p>Una propuesta visual para comunicar confianza, claridad y movimiento.</p><span class="footer-demo">Contenido demostrativo · No representa datos reales</span></div><div class="footer-col"><small class="footer-label">Explora</small><a href="#servicios">Servicios</a><a href="#recogida">Recogida</a><a href="#galeria">Galería</a></div><div class="footer-col"><small class="footer-label">Contacto</small><a href="#ubicacion" data-config="location">Nueva ubicación</a><a href="#" class="js-whatsapp" data-message="Hola, quisiera solicitar información sobre el servicio automotriz.">WhatsApp</a><span data-config="reference">Referencia: Bodega 14</span></div><div class="footer-col"><small class="footer-label">Horarios</small><div id="footer-hours"></div></div></div><div class="shell footer-bottom"><span>© <span id="year"></span> <span data-config="name">Taller Demo</span></span><span>Diseño de demostración</span></div></footer>
+
+    <a class="floating-wa js-whatsapp" href="#" aria-label="Escribir por WhatsApp" data-message="Hola, quisiera solicitar información sobre el servicio automotriz."><svg viewBox="0 0 24 24" fill="none"><path d="M20.3 11.5a8.3 8.3 0 0 1-12.2 7.2l-3.8 1.3 1.4-3.6A8.3 8.3 0 1 1 20.3 11.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M9.1 8.2c.3-.3.6-.3.9 0l.9 1.2c.2.3.2.6-.1.8l-.5.5c.5 1 1.3 1.8 2.4 2.3l.5-.5c.2-.2.6-.3.9-.1l1.2.7c.3.2.4.6.2.9-.5.7-1.2 1.1-1.9 1-2.8-.3-5.9-3.4-6.3-6.2-.1-.4.2-.9.6-1.2Z" fill="currentColor"/></svg><span>WhatsApp</span></a>
+  </body>
+</html>
