@@ -1,11 +1,13 @@
 """Servidor local mínimo con fallback para las rutas del CRM."""
 
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+from urllib.parse import urlsplit
 
 
 class DemoHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
-        if self.path == "/crm" or self.path.startswith("/crm/"):
+        route = urlsplit(self.path).path
+        if route == "/crm" or route.startswith("/crm/"):
             self.path = "/index.html"
         return super().do_GET()
 
